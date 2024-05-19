@@ -1,0 +1,194 @@
+body {
+    font-family: "Ubuntu Sans", "Roboto", sans-serif;
+}
+
+/* header  */
+
+
+.primary-header {
+    padding: 20px 0;
+    color: #fff;
+    
+}
+
+.logo {
+    text-align: center;
+    vertical-align: middle;
+    text-wrap: nowrap;
+}
+.logo img {
+    display: inline-block;
+    text-align: center;
+  
+}
+
+.logo-text  {
+    vertical-align: bottom;
+    text-align: start;
+    display: inline-block;
+}
+
+.primary-nav{
+    text-align: center;
+}
+
+.primary-nav a {
+    display: inline-block;
+}
+/* Sections */
+
+.section-1 {
+    height: 600px;
+    color: #fff;
+    font-size: 26px;
+    text-align: center;
+}
+
+
+.section-1-sep {
+    background: #000;
+}
+.section-1-sep img {
+    width: 100%;
+    
+}
+
+.section-2 {
+    margin-top: -1px; 
+}
+
+.section-3 {
+    padding: 50px 0;
+    color: #fff;
+   
+}
+
+.article {
+    padding: 50px 0;
+}
+
+.section-3-sep {
+    
+    overflow: hidden;
+    background: #0FCE7E;
+}
+
+
+/* Containers */
+.background-1 {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1), rgba(0, 0, 0 ,0)), linear-gradient(0, rgba(0, 0, 0, 1), rgba(0, 0, 0 ,0)),  url("background.png");
+    background-size: 100% 20%, 100% 20%, cover;
+    background-repeat: no-repeat;
+    background-position: top, bottom, center;
+    height: 800px;
+}
+
+.background-2 {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)) #0FCE7E;
+    background-size: 100% 100px, cover;
+    background-repeat: no-repeat;
+    background-position: bottom, center;
+    padding-bottom: 100px;
+}
+
+.background-3 {
+    background: #000;
+}
+
+
+/* Навигация */
+.secondary-nav {
+    display: inline-block;
+    text-align: center;
+    font-size: 16px;
+    margin-top: -15px;
+    padding-bottom: 40px;
+}
+
+.secondary-nav a {
+    
+    padding: 10px;
+
+}
+
+/* footer */
+footer {
+    background: #0FCE7E;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.footer-logo {
+    text-align: center;
+}
+
+.footer-logo img {
+    display: inline-block;
+    vertical-align: middle;
+    text-wrap: nowrap;
+}
+
+.footer-logo .text {
+    display: inline-block;
+    max-width: 350px;
+    vertical-align: middle;
+    text-wrap: nowrap;
+    font-size: 10px;
+}
+.footer-logo h3 {
+    font-size: 12px;
+}
+
+.footer-logo h4 {
+    font-size: 10px;
+}
+
+/* Ссылки */
+.primary-header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.primary-header a:hover {
+    
+    color:#0FCE7E;
+}
+
+#contact-button {
+    padding: 5px;
+    background-color: #0FCE7E;
+    border-radius: 12px;
+    white-space: nowrap;   
+}
+
+#contact-button:hover {
+    color: #0FCE7E;
+    background-color: #fff;
+}
+
+.secondary-nav a {
+    color: #000;
+    text-decoration: none;
+}
+
+.secondary-nav a:hover {
+    color: #fff;
+}
+
+.section-1 a {
+    color: #0FCE7E;
+    background: #000;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    border: #0FCE7E solid 2px;
+}
+
+.section-1 a:hover {
+    color: #fff;
+    border: #fff solid 3px;
+ 
+}
+
+/* Кнопки */
+
