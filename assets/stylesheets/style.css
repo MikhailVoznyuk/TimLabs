@@ -74,11 +74,13 @@ body {
 }
 
 .project-block {
-    height: 200px;
-    width: 300px;
+    min-width: 250px;
+    width: 80%;
+    
     background: url("prjct_block.svg");
     background-size: cover;
     background-repeat: no-repeat;
+    margin: 30px 0;
 }
 
 /* Containers */
