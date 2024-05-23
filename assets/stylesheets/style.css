@@ -14,7 +14,7 @@ body {
 .logo {
     text-align: center;
     vertical-align: middle;
-    text-wrap: nowrap;
+    width: 200px;
 }
 .logo img {
     display: inline-block;
