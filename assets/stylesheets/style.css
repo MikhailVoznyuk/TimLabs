@@ -73,6 +73,13 @@ body {
     background: #0FCE7E;
 }
 
+.project-block {
+    height: 200px;
+    width: 300px;
+    background: url("prjct_block.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 /* Containers */
 .background-1 {
@@ -92,6 +99,10 @@ body {
 }
 
 .background-3 {
+    background: #000;
+}
+
+.project-section-main {
     background: #000;
 }
 
