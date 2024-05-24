@@ -12,14 +12,17 @@ body {
 }
 
 .logo {
-    text-align: center;
+    text-align: start;
     vertical-align: middle;
-    width: 200px;
+    text-wrap: nowrap;
+    padding-left: 50px;
+    
 }
+
 .logo img {
     display: inline-block;
-    text-align: center;
-  
+    width: 240px;
+    min-width: 150px;
 }
 
 .logo-text  {
@@ -29,12 +32,25 @@ body {
 }
 
 .primary-nav{
-    text-align: center;
+    text-align: end;
 }
 
 .primary-nav a {
     display: inline-block;
+    margin: 0 20px;
 }
+
+.offcanvas-btn {
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.5) url("offcanvas.svg");
+    background-size: cover;
+    height: 50px;
+    width: 52px;
+    border: 0;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
 /* Sections */
 
 .section-1 {
@@ -76,7 +92,7 @@ body {
 .project-block {
     min-width: 250px;
     width: 80%;
-    
+    height: 230px;
     background: url("prjct_block.svg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -119,9 +135,7 @@ body {
 }
 
 .secondary-nav a {
-    
     padding: 10px;
-
 }
 
 /* footer */
@@ -195,6 +209,7 @@ footer {
     font-size: 20px;
     padding: 10px;
     border: #0FCE7E solid 2px;
+    min-width: 80px;
 }
 
 .section-1 a:hover {
@@ -205,3 +220,13 @@ footer {
 
 /* Кнопки */
 
+
+/*Скрипты */
+
+#element {
+    display: inline;
+}
+
+.typed {
+    background: rgba(0, 0, 0, 0.5);
+}
