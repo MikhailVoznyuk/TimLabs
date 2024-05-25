@@ -225,8 +225,10 @@ footer {
 
 #element {
     display: inline;
+    color: #0FCE7E;
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .typed {
-    background: rgba(0, 0, 0, 0.5);
+    color: #0FCE7E;
 }
