@@ -22,7 +22,7 @@
                             <img  class="img-fluid" src="assets/images/TimLabs.png">
                         </div>
                         <nav class="primary-nav d-none d-md-block col-8">
-                            <a href="index.html">
+                            <a href="projects.html">
                                 Проекты
                             </a>
                         
@@ -42,24 +42,35 @@
                             </button>
 
                             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                                <div class="offcanvas-header">
-                                    <h5 id="offcanvasRightLabel">Offcanvas справа</h5>
-                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
+                                <div class="offcanvas-header row">
+                                    
+                                    <div class="col-2"> </div>
+                                    <div class="col-8"><h2>TimLabs</h2></div>
+                                    <div class="col-2">
+                                        <button type="button" class="btn-canvas-close" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
+                                    </div>
+                                   
+                                    
+                                   
                                 </div>
                                 <div class="offcanvas-body">
-                                    <a href="index.html">
-                                        Проекты
-                                    </a>
+                                    <div class="row justify-content-center">
+                                        <a class="col-6 canvas-col" href="projects.html">
+                                            Проекты
+                                        </a>  
+                                    </div>
                                 
+                                    <div class="row justify-content-center">
+                                        <a class="col-6 canvas-col" href="index.html">
+                                            Оборудование 
+                                        </a>
+                                    </div>
                                 
-                                    <a href="index.html">
-                                        Оборудование 
-                                    </a>
-                                
-                            
-                                    <a href="index.html" id="contact-button">
-                                        Связаться с нами
-                                    </a>
+                                    <div class="row justify-content-center">
+                                        <a class="col-6 canvas-col" href="index.html" id="canvas-col-last">
+                                            Связаться с нами
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
 
@@ -81,7 +92,9 @@
                     </div>
                 </div>
                 <div class="row align-items-center justify-content-center">
-                    <a href="propjects.html" class="col-4">Узнать больше</a>
+                    <div class="outer-polygon col-4">
+                        <a href="propjects.html">Узнать больше</a>
+                    </div>
                 </div>
             </div>
             
@@ -208,7 +221,7 @@
                 <div class="container">
                     <div class="row justify-content-center secondary-nav">
                             
-                        <a href="index.html">Проекты</a>
+                        <a href="projects.html">Проекты</a>
                 
                         <a href="index.html">Оборудование</a>
                 
@@ -252,20 +265,15 @@
             new Glide('.glide', {
                 perView: 3,
                 breakpoints: {
-                    
-                    600: {
+                    800: {
                         perView: 1
                     },
-
-                    800: {
-                        perView: 2,
-                    },
-
                     1200: {
-                        perView: 3
+                        perView: 2
                     },
-                    
-	            },
+
+                },
+
                 focusAt: "center",
                 autoplay: 5000,
             }).mount()

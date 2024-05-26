@@ -11,6 +11,9 @@ body {
     
 }
 
+.second-header {
+    background: #000;
+}
 .logo {
     text-align: start;
     vertical-align: middle;
@@ -69,10 +72,22 @@ body {
     
 }
 
+.outer-polygon {
+    display: inline-block;
+    position: relative;
+    width: 280px;
+    height: 60px;
+    clip-path: polygon(20% 0, 100% 0, 80% 100%, 0 100%);
+    background-color: #0FCE7E;
+}
+
 .section-2 {
     margin-top: -1px; 
 }
 
+.section-2 img {
+    clip-path: polygon(10% 0, 95% 0, 100% 10%, 100% 80%, 90% 100%, 5% 100%, 0% 90%, 0% 20%);
+}
 .section-3 {
     padding: 50px 0;
     color: #fff;
@@ -203,32 +218,73 @@ footer {
 }
 
 .section-1 a {
+    display: flex;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 276px;
+    height: 56px;
+    align-items: center;
+    justify-content: center;
     color: #0FCE7E;
     background: #000;
     text-decoration: none;
+   
     font-size: 20px;
-    padding: 10px;
-    border: #0FCE7E solid 2px;
     min-width: 80px;
+    clip-path: polygon(20% 0, 99% 0, 80% 100%, 1% 100%);
 }
 
 .section-1 a:hover {
-    color: #fff;
-    border: #fff solid 3px;
+    background: #fff;
  
 }
 
-/* Кнопки */
+.offcanvas-body a {
+    text-align: center;
+    color: #0FCE7E;
+    
+}
 
+/* Кнопки */
+.btn-canvas-close {
+    height: 40px;
+    width: 40px;
+    border: 0;
+    background: url("close-btn.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 /*Скрипты */
+
+.offcanvas {
+    background: #000;
+}
+
+.offcanvas-header h2 {
+    text-align: center;
+}
+
+.canvas-col {
+    padding: 14px;
+    border-bottom: 2px solid #0FCE7E;
+    
+}
+
+#canvas-col-last {
+    border: 0;
+}
 
 #element {
     display: inline;
     color: #0FCE7E;
     background: rgba(0, 0, 0, 0.5);
+    text-align: center;
 }
 
 .typed {
     color: #0FCE7E;
+    font-size: 30px;
+    text-align: center;
 }
