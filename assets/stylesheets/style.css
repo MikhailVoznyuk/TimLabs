@@ -6,11 +6,12 @@ body {
 
 .title {
     width: 50%;
+    margin: 40px 0;
 }
 
 .title-image {
     display: inline-block;
-    width: 50%;
+    width: 40%;
     filter:drop-shadow(0 0 0);
     vertical-align: middle;
 }
@@ -18,8 +19,9 @@ body {
 .title-text {
     vertical-align: middle;
     display: inline-block;
-    width: 35%;
+    width: 40%;
 }
+
 /* header  */
 
 
@@ -102,8 +104,9 @@ body {
 
 .block-footer .outer-polygon {
     display:inline-block;
-    vertical-align: middle;
+    vertical-align: bottom;
     background-color: #FFF;
+    clip-path: polygon(20% 0, 80% 0, 100% 100%, 0 100%);
 }
 
 .section-2 {
@@ -149,6 +152,7 @@ body {
 .project-block {
     display: inline-block;
     width: 100%;
+    max-width: 800px;
     aspect-ratio: 601 / 335;
    
     background: url("prjct_block.svg");
@@ -167,39 +171,50 @@ body {
     background-repeat: no-repeat;
 }
 
+.block-header {
+    height: 15%;
+}
+
+.block-header h2 {
+
+    vertical-align: bottom;
+    margin-bottom: 0;
+}
+
+.project-block.project-block-small .block-header h2 {
+    padding-left: 5%;
+}
 .block-body {
-    max-height: 60%;
+    height: 65%;
     overflow: hidden;
-    margin-bottom: 2%;
+    padding-bottom: 4%;
+  
 }
 
 .block-footer {
-    height: 25%;
+    height: 20%;
+    
 }
-.project-block h2 {
-    margin-top: 3%;
-    margin-bottom: 2%;
 
-}
+
 
 .project-block img {
    
     width: 90%;
     display: inline-block;
     clip-path: polygon(5% 0, 85% 0, 100% 20%, 100% 40%, 98% 44%, 98% 66%, 100% 70%, 100% 90%, 95% 100%, 15% 100%, 0% 80%, 0% 10%);
-    margin-bottom: 5%;
+    
     
 }
 
-.project-block p {
+.project-body p {
     text-align: left;
     vertical-align: middle;
-    height: 100%;
     overflow:hidden;
 }
 
 .project-block.project-block-small p {
-    height: 100%;
+    margin-top: 4%;
 }
 .project-block a {
     font-size: 26px;
@@ -247,6 +262,10 @@ body {
 
 .secondary-nav a {
     padding: 10px;
+}
+
+.breadcrumb {
+    margin-bottom: 60px;
 }
 
 /* footer */
@@ -313,6 +332,16 @@ footer {
     color: #fff;
 }
 
+.breadcrumb a {
+    color :#0FCE7E;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    color: #FFF;
+    text-decoration: underline;
+}
+
 .crop-link  {
     display: flex;
     position: absolute;
@@ -332,9 +361,31 @@ footer {
 }
 
 .section-1 a:hover {
-    background: #fff;
- 
+    font-weight: 500;
+    text-decoration: underline;
+    color: #000;
+    background: #0FCE7E; 
 }
+
+.section-1 .outer-polygon:hover {
+    background: #000;
+}
+
+.project-link {
+    color: #aaa;
+    clip-path: polygon(20% 0, 80% 0, 99% 100%, 1% 100%);
+}
+
+.block-footer .outer-polygon:hover {
+    background-color: #000;
+}
+.project-link:hover {
+    font-weight: 500;
+    text-decoration: underline;
+    color: #000;
+    background-color: #FFF;
+}
+
 
 .offcanvas-body a {
     text-align: center;
@@ -415,7 +466,7 @@ footer {
 
 
 .hero {
-    font-size: clamp(26px, 8vw, 40px);
+    font-size: clamp(22px, 6vw, 40px);
     line-height: 1;
     display: inline-block;
     color: #fff;
@@ -439,6 +490,7 @@ footer {
   .layers::after {
     content: attr(data-text);
     position: absolute;
+    width: 110px;
     
     z-index: -1;
   }
