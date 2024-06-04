@@ -162,7 +162,6 @@ body {
     width: 100%;
     max-width: 800px;
     aspect-ratio: 601 / 335;
-   
     background: url("prjct_block.svg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -369,7 +368,6 @@ footer {
     color: #0FCE7E;
     background: #000;
     text-decoration: none;
-   
     font-size: 20px;
     min-width: 80px;
     clip-path: polygon(20% 0, 99% 0, 80% 100%, 1% 100%);
@@ -476,9 +474,6 @@ footer {
     transition: all 1.5s;
     transform: translate(0%);
 }
-
-/* Bright things in dark environments usually cast that light, giving off a glow */
-
 
 .hero {
     font-size: clamp(22px, 6vw, 40px);
