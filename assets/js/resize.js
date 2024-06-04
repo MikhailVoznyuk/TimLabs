@@ -14,5 +14,5 @@ function updateBlockStyle() {
     }
 }
 
+document.addEventListener("DOMContentLoaded", updateBlockStyle);
 window.addEventListener("resize", updateBlockStyle);
-
