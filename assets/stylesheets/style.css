@@ -22,6 +22,14 @@ body {
     width: 40%;
 }
 
+.project-section-secondary h2 {
+    margin: 20px 0 20px 20px;
+}
+
+.project-section-secondary p {
+    text-wrap:wrap;
+}
+
 /* header  */
 
 
@@ -246,6 +254,13 @@ body {
 
 .project-section-main {
     background: #000;
+}
+
+.project-section-secondary{
+    
+    background: #0FCE7E;
+    border-radius: 10px;
+    margin-bottom: 50px;
 }
 
 
