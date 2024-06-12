@@ -22,12 +22,21 @@ body {
     width: 40%;
 }
 
-.project-section-secondary h2 {
-    margin: 20px 0 20px 20px;
+
+.project h2 {
+  color:#0FCE7E;
+  font-size: 28px;
+  margin-top: 5%;
 }
 
-.project-section-secondary p {
-    text-wrap:wrap;
+.project .slider {
+  margin-top: 4%;
+}
+
+.project p {
+  color: #fff;
+  margin-top: 2%;
+  text-align:justify;
 }
 
 /* header  */
@@ -252,17 +261,13 @@ body {
 }
 
 .project-section-main {
+    position: relative;
     background: #000;
 }
 
-.project-section-secondary{
-    
-    background: #0FCE7E;
-    border-radius: 10px;
-    margin-bottom: 50px;
+.project {
+  background-color: rgba(0, 0, 0, 0.6);
 }
-
-
 
 
 /* Навигация */
@@ -964,3 +969,15 @@ footer {
     filter: blur(5px);
   
   }
+
+#particles-js {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.project-section-main .page-content {
+  position: relative;
+  z-index: 1;
+  background-color: transparent;
+}
