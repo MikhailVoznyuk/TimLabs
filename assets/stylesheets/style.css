@@ -1,13 +1,14 @@
 
 body {
     font-family: "Ubuntu Sans", "Roboto", sans-serif;
+    overflow-x: hidden;
 }
 
 /* Типографика */
 
 .title {
     width: 50%;
-    margin: 40px 0;
+    margin: 40px 0 40px -12px;
 }
 
 .project-title {
@@ -195,9 +196,7 @@ body {
 }
 
 .section-3-sep {
-    
     overflow: hidden;
-    background: #0FCE7E;
 }
 
 .project-block {
@@ -314,7 +313,6 @@ body {
     display: inline-block;
     text-align: center;
     font-size: 16px;
-    margin-top: -15px;
     padding-bottom: 40px;
 }
 
