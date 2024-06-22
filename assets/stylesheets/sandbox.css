@@ -1,0 +1,13 @@
+.container {
+    background-color: aqua;
+    height: 900px;
+}
+
+img {
+    width: 100%;
+}
+
+.modal-body {
+    padding: 0;
+    box-shadow: 0 0 30px #000;
+}
