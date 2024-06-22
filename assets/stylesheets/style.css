@@ -1,12 +1,18 @@
+
 body {
     font-family: "Ubuntu Sans", "Roboto", sans-serif;
+    overflow-x: hidden;
 }
 
 /* Типографика */
 
 .title {
     width: 50%;
-    margin: 40px 0;
+    margin: 40px 0 40px -12px;
+}
+
+.project-title {
+  width: 80%;
 }
 
 .title-image {
@@ -16,10 +22,20 @@ body {
     vertical-align: middle;
 }
 
+.project-title .title-image{
+  width: 5%;
+}
+
+
+
 .title-text {
     vertical-align: middle;
     display: inline-block;
     width: 40%;
+}
+
+.project-title .title-text {
+  width: 80%;
 }
 
 
@@ -48,9 +64,6 @@ body {
     
 }
 
-.second-header {
-    background: #000;
-}
 .logo {
     text-align: start;
     vertical-align: middle;
@@ -134,12 +147,34 @@ body {
     margin-top: 50px;
 }
 
+
+.cut-background {
+  display: inline-block;
+  position: relative;
+  background-color: #000;
+  clip-path: polygon(10% 0, 95% 0, 100% 10%, 100% 80%, 90% 100%, 5% 100%, 0% 90%, 0% 20%);
+  padding: 3px;
+}
+
 .section-2 .img-cut {
+    display: flex;
+    width: 100%;
+  
+   
     clip-path: polygon(10% 0, 95% 0, 100% 10%, 100% 80%, 90% 100%, 5% 100%, 0% 90%, 0% 20%);
 }
 
+.project .cut-background {
+  clip-path: polygon(10% 0, 90% 0, 100% 10%, 100% 90%, 90% 100%, 10% 100%, 0 90%, 0 10%);
+  background-color: #0FCE7E;
+}
+
 .section-2-sep {
-    width: 100%;
+  width: 100%;
+  aspect-ratio: 1200/70;
+  background: url('vector-sep.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 
@@ -161,17 +196,15 @@ body {
 }
 
 .section-3-sep {
-    
     overflow: hidden;
-    background: #0FCE7E;
 }
 
 .project-block {
     display: inline-block;
     width: 100%;
     max-width: 800px;
-    aspect-ratio: 601 / 335;
-    background: url("prjct_block.svg");
+    aspect-ratio: 600 / 340;
+    background: url("project-section.svg");
     background-size: cover;
     background-repeat: no-repeat;
     
@@ -202,7 +235,7 @@ body {
 }
 .block-body {
     height: 65%;
-    overflow: hidden;
+    
     padding-bottom: 4%;
   
 }
@@ -212,21 +245,32 @@ body {
     
 }
 
-
+.block-body .cut-background {
+  width: 90%;
+  clip-path: polygon(5% 0, 85% 0, 100% 20%, 100% 40%, 98% 44%, 98% 66%, 100% 70%, 100% 90%, 95% 100%, 15% 100%, 0% 80%, 0% 10%);
+  padding: 1px;
+}
 
 .project-block img {
-   
-    width: 90%;
-    display: inline-block;
-    clip-path: polygon(5% 0, 85% 0, 100% 20%, 100% 40%, 98% 44%, 98% 66%, 100% 70%, 100% 90%, 95% 100%, 15% 100%, 0% 80%, 0% 10%);
-    
-    
+  background-color: #000;
+  width: 100%;
+  display: inline-block;
+  clip-path: polygon(5% 0, 85% 0, 100% 20%, 100% 40%, 98% 44%, 98% 66%, 100% 70%, 100% 90%, 95% 100%, 15% 100%, 0% 80%, 0% 10%);
+}
+
+.block-body .preview-text {
+  height: 100%;
+  overflow: scroll;
+}
+
+.project-block.project-block-small .block-body .preview-text {
+  height: 60%;
 }
 
 .project-body p {
     text-align: left;
     vertical-align: middle;
-    overflow:hidden;
+    
 }
 
 .project-block.project-block-small p {
@@ -261,7 +305,7 @@ body {
 }
 
 .project-section-main {
-    position: relative;
+    
     background: #000;
 }
 
@@ -269,13 +313,17 @@ body {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
+/* Backgrounds */
+
+.background-black {
+  background-color: black;
+}
 
 /* Навигация */
 .secondary-nav {
     display: inline-block;
     text-align: center;
     font-size: 16px;
-    margin-top: -15px;
     padding-bottom: 40px;
 }
 
@@ -296,20 +344,25 @@ footer {
 
 .footer-logo {
     text-align: center;
+    
 }
 
+
 .footer-logo img {
-    display: inline-block;
-    vertical-align: middle;
-    text-wrap: nowrap;
+  display: inline-block;
+  max-width: 100px;
+  vertical-align: middle;
+  text-wrap: nowrap;
 }
 
 .footer-logo .text {
     display: inline-block;
-    max-width: 350px;
+    max-width: 50%;
     vertical-align: middle;
-    text-wrap: nowrap;
-    font-size: 10px;
+    text-align: start;
+    font-size: 10px; 
+    margin-left: 10px;
+ 
 }
 .footer-logo h3 {
     font-size: 12px;
@@ -411,6 +464,10 @@ footer {
     
 }
 
+.project-breadcrumb {
+  margin-top: 50px;
+  margin-bottom: 34px;
+}
 /* Кнопки */
 .btn-canvas-close {
     height: 40px;
@@ -974,10 +1031,32 @@ footer {
   position: absolute;
   height: 100%;
   width: 100%;
+  z-index: 0;
 }
-
-.project-section-main .page-content {
+.particles-background {
+  position: relative;
+}
+.page-content {
   position: relative;
   z-index: 1;
   background-color: transparent;
+}
+
+.project .glide__slide {
+
+  border: 0;
+}
+
+.project .glide__slide img{
+  clip-path: polygon(10% 0, 90% 0, 100% 10%, 100% 90%, 90% 100%, 10% 100%, 0 90%, 0 10%);
+  border: 0;
+}
+
+.modal-body {
+  padding: 0;
+  box-shadow: 0 0 30px #0FCE7E;
+}
+
+.modal-body img {
+  width: 100%;
 }
