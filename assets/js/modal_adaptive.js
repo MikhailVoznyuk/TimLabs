@@ -6,7 +6,7 @@ const body = document.querySelector("body")
 var isModalOpened = false;
 
 
-function removeContent() {
+function removeContent(el, e) {
     console.log('раз')
     if (isModalOpened == true) {
         console.log('1')
@@ -29,12 +29,18 @@ function removeContent() {
       
         body.addEventListener("click", removeContent);
         isModalOpened = true;
+        e.stopPropagation();
+        e.preventDefault();
+        
         
     }
+
 }
 
 for (let image of images) {
-    image.addEventListener("click", removeContent);
+    image.addEventListener("click", function(e) {
+        removeContent(image, e);
+    })
 }
 
 
