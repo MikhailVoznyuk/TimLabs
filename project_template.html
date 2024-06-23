@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="assets/stylesheets/style.css">
         <link rel="stylesheet" href="assets/stylesheets/glide.core.min.css">
         <link rel="stylesheet" href="assets/stylesheets/glide.theme.min.css">
+        
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
@@ -17,15 +18,13 @@
             <div id="particles-js"></div>
             <div class="page-content">
                 <header>
-                    <div class="primary-header second-header">
+                    <div class="primary-header">
                         <div class="row justify-content-between align-items-center">
-                            
                             <div class="logo col-4">    
                                 <a href="index.html">
                                     <img  class="img-fluid" src="assets/images/TimLabs.png">
                                 </a>
                             </div>
-                            
                             <nav class="primary-nav d-none d-md-block col-8">
                                 <a href="projects.html">
                                     Проекты
@@ -43,38 +42,78 @@
                             </nav>
                             <div class="col-3 d-block d-md-none">
                                 <button class="offcanvas-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                                    
+                                
                                 </button>
 
                                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                                     <div class="offcanvas-header row">
-                                        
-                                        <div class="col-2"> </div>
-                                        <div class="col-8"><h2>TimLabs</h2></div>
+                                  
+                                        <div class="col-2"></div>
+                                        <div class="col-8 hero hero-canvas glitch layers">
+                                            <span>
+                                                TimLabs
+                                            </span>
+                                        </div>
                                         <div class="col-2">
                                             <button type="button" class="btn-canvas-close" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
                                         </div>
                                         
+                                     
+                                            
                                         
+                            
                                         
+                                    
                                     </div>
                                     <div class="offcanvas-body">
-                                        <div class="row justify-content-center">
-                                            <a class="col-6 canvas-col" href="projects.html">
+                                        <section class="row  justify-content-center canvas-row">
+                                        
+                                            <div class="col-1 side-arrows side-arrows-left">
+                                                <img src="assets/images/arrow.svg">
+                                            </div>
+                                            <a class="col-6" href="projects.html">
                                                 Проекты
                                             </a>  
+                                            <div class="col-1 side-arrows side-arrows-right">
+                                                <img src="assets/images/arrow.svg">
+                                            </div>
+                                        
+                                            
+                                        </section>
+                                    
+                                        <div class="row justify-content-center">
+                                            <section class="row  justify-content-center canvas-row">
+                                        
+                                                <div class="col-1 side-arrows side-arrows-left">
+                                                    <img src="assets/images/arrow.svg">
+                                                </div>
+                                                <a class="col-6" href="projects.html">
+                                                    Университет
+                                                </a>  
+                                                <div class="col-1 side-arrows side-arrows-right">
+                                                    <img src="assets/images/arrow.svg">
+                                                </div>
+                                            
+                                                
+                                            </section>
+                                        
                                         </div>
                                     
                                         <div class="row justify-content-center">
-                                            <a class="col-6 canvas-col" href="index.html">
-                                                Оборудование 
-                                            </a>
-                                        </div>
-                                    
-                                        <div class="row justify-content-center">
-                                            <a class="col-6 canvas-col" href="index.html" id="canvas-col-last">
-                                                Связаться с нами
-                                            </a>
+                                            <section class="row  justify-content-center canvas-row">
+                                        
+                                                <div class="col-2 side-arrows side-arrows-left">
+                                                    <img src="assets/images/arrow.svg">
+                                                </div>
+                                                <a class="col-6" href="contacts.html">
+                                                    Связаться с нами
+                                                </a>  
+                                                <div class="col-2 side-arrows side-arrows-right">
+                                                    <img src="assets/images/arrow.svg">
+                                                </div>
+                                            
+                                                
+                                            </section>
                                         </div>
                                     </div>
                                 </div>
@@ -127,12 +166,12 @@
                                             </li>
                                             <li class="glide__slide cut-background">
                                                 <div data-bs-toggle="modal" data-bs-target="#imageOverview">
-                                                    <img class="image-modal" src="assets/images/preview1.jpg">
+                                                    <img class="image-modal" src="assets/images/preview2.jpg">
                                                 </div>
                                             </li>
                                             <li class="glide__slide cut-background">
                                                 <div data-bs-toggle="modal" data-bs-target="#imageOverview">
-                                                    <img class="image-modal" src="assets/images/preview1.jpg">
+                                                    <img class="image-modal" src="assets/images/preview3.jpg">
                                                 </div>
                                             </li>
                                             <li class="glide__slide cut-background">
@@ -152,7 +191,9 @@
                             </div>
                         </div>
                         <div class="row justify-content-center">
-                            <p class="col-10">В конкурсе участвовали студенты из вузов со всей России. Их проекты оценивались по цели и стратегии, уникальности, предполагаемым результатам, источникам и условиям финансирования, наличию интеллектуальной собственности, экономической эффективности, риску реализации и потенциалу.
+                           
+                            <p class="col-10">
+                                В конкурсе участвовали студенты из вузов со всей России. Их проекты оценивались по цели и стратегии, уникальности, предполагаемым результатам, источникам и условиям финансирования, наличию интеллектуальной собственности, экономической эффективности, риску реализации и потенциалу.
 
                                 По результатам экспертной оценки были отобраны 15 лучших проектов, которые будут представлены в финале. Одним из них стал проект студентов Тимирязевской академии "Информационно-аналитическая система мониторинга деградации пастбищ "CPV".
                                 
@@ -161,6 +202,7 @@
                                 - На фоне других вузов работа наших студентов выделяется интеграцией передовых технологий и практическим значением для агропромышленного комплекса, - отметила А.В. Греченева. - Этот успех не был бы возможен без высокотехнологичного оснащения лабораторий Проектного института цифровой трансформации АПК, в частности Лаборатории искусственного интеллекта. Благодаря поддержке ректора Владимира Ивановича Трухачева студенты имеют доступ к современным ресурсам и оборудованию для реализации своих инновационных идей.
                                 
                                 Свой стартап студенты представят в финале конкурса, который состоится 28 июня.</p>   
+            
                         </div>
                         
                     </div>
@@ -187,15 +229,14 @@
                          
                         </div>
                     </div>
-                    <div class="row footer-logo">
-                        <div class="col-md-2">
-                            <img src="assets/images/logo.svg">
-                        </div>
-                            
-                        <div class="col-md-2 text">
-                            <h3>ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ВЫСШЕГО ОБРАЗОВАНИЯ</h3>
-                            <h4>РОССИЙСКИЙ ГОСУДАРСТВЕННЫЙ АГРАРНЫЙ УНИВЕРСИТЕТ</h4>
-                        </div>
+                    <div class="row justify-content-center  align-items-center">
+                        <div class="col-12 footer-logo">
+                            <img src="assets/images/rgau_msha_logo.svg">
+                       
+                            <div class="text">
+                                <h3>ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ВЫСШЕГО ОБРАЗОВАНИЯ</h3>
+                                <h4>РОССИЙСКИЙ ГОСУДАРСТВЕННЫЙ АГРАРНЫЙ УНИВЕРСИТЕТ</h4>
+                            </div>
                         </div>
                     </div>
                     <div class="row justify-content-center">
@@ -213,7 +254,7 @@
                     <div class="modal-body">
                         <div class="row">
                             <div class="col-12">
-                                <img src="assets/images/preview1.jpg">
+                                <img src="">
                             </div>
                         </div>
                     </div>

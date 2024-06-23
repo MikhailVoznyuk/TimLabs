@@ -291,6 +291,20 @@ body {
     color: #FFF;
 }
 
+.side-decoration {
+  height: 80%;
+  vertical-align: middle;
+}
+
+.side-decoration-left {
+  float: left;
+}
+
+.side-decoration-right {
+  transform: rotate(180deg);
+  float: right;
+}
+
 
 /* Containers */
 .background-1 {
@@ -470,13 +484,22 @@ footer {
 .offcanvas-body a {
     text-align: center;
     color: #0FCE7E;
+    text-decoration: underline;
     
+}
+
+.offcanvas-body a:hover {
+  color: #FFF;
 }
 
 .project-breadcrumb {
   margin-top: 50px;
   margin-bottom: 34px;
 }
+
+/* Изоображения */ 
+
+
 /* Кнопки */
 .btn-canvas-close {
     height: 40px;
@@ -528,11 +551,15 @@ footer {
 }
 
 
-.canvas-col {
+.canvas-row {
     vertical-align: middle;
     padding: 14px;
-    border-bottom: 2px solid #0FCE7E;
+
     
+}
+
+.canvas-row-content {
+  border-bottom: 2px solid #0FCE7E;
 }
 
 #canvas-col-last {
@@ -588,6 +615,11 @@ footer {
   
 
     
+  }
+
+  .hero-canvas {
+    font-size: 28px;
+    text-align: center;
   }
   
   .demo {
@@ -1055,6 +1087,9 @@ footer {
   .hero-container {
     position: relative;
     
+  }
+
+  .hero span {
   }
   
   .environment {
