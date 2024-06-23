@@ -94,14 +94,19 @@ body {
 }
 
 .offcanvas-btn {
-    display: inline-block;
-    background: rgba(0, 0, 0, 0.5) url("offcanvas.svg");
-    background-size: cover;
-    height: 50px;
-    width: 52px;
-    border: 0;
-    border-radius: 50%;
-    vertical-align: middle;
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.5) url("offcanvas_btn.svg");
+  background-size: cover;
+  height: 50px;
+  width: 52px;
+  border: 0;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.offcanvas-btn:hover {
+  background: rgba(0, 0, 0, 0.5) url("offcanvas_btn_hover.svg");
+  background-size: cover;
 }
 
 /* Sections */
@@ -243,6 +248,10 @@ body {
 .block-footer {
     height: 20%;
     
+}
+
+.block-body .preview-image {
+  text-align: center;
 }
 
 .block-body .cut-background {
@@ -478,6 +487,11 @@ footer {
     background-repeat: no-repeat;
 }
 
+.btn-canvas-close:hover {
+  background: url("close-btn-hover.svg");
+  background-size: cover;
+}
+
 /*Скрипты */
 
 .offcanvas {
@@ -488,7 +502,34 @@ footer {
     text-align: center;
 }
 
+.offcanvas-body img {
+  display: inline-block;
+  height: 20px;
+  vertical-align: center;
+  
+}
+
+.offcanvas-body .side-arrows {
+  padding: 0;
+}
+
+.side-arrows.side-arrows-left {
+  text-align: end;
+}
+
+
+.side-arrows.side-arrows-right {
+  text-align: start;
+  
+}
+
+.side-arrows.side-arrows-right img {
+  transform: rotate(180deg);
+}
+
+
 .canvas-col {
+    vertical-align: middle;
     padding: 14px;
     border-bottom: 2px solid #0FCE7E;
     
@@ -1059,4 +1100,8 @@ footer {
 
 .modal-body img {
   width: 100%;
+}
+
+.hidden {
+  opacity: 0;
 }
