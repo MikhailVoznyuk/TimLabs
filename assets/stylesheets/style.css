@@ -26,8 +26,6 @@ body {
   width: 5%;
 }
 
-
-
 .title-text {
     vertical-align: middle;
     display: inline-block;
@@ -53,6 +51,21 @@ body {
   color: #fff;
   margin-top: 2%;
   text-align:justify;
+}
+
+.typed-contacts {
+  
+  font-family: monospace;
+  color: #0FCE7E;
+}
+
+.contact-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.contact-element {
+  font-size: 22px;
 }
 
 /* header  */
@@ -305,6 +318,9 @@ body {
   float: right;
 }
 
+.contacts-section {
+  margin-bottom: 50px;
+}
 
 /* Containers */
 .background-1 {
