@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/stylesheets/style.css">
+    </head>
+    <body>
+        <div class="particles-background background-black">
+            <div id="particles-js"></div>
+            <div class="page-content">
+                <header>
+                    <div class="primary-header">
+                        <div class="row justify-content-between align-items-center">
+                            <div class="logo col-4">    
+                                <a href="index.html">
+                                    <img  class="img-fluid" src="assets/images/TimLabs.png">
+                                </a>
+                            </div>
+                            <nav class="primary-nav d-none d-md-block col-8">
+                                <a href="projects.html">
+                                    Проекты
+                                </a>
+                            
+                            
+                                <a href="index.html">
+                                    Оборудование 
+                                </a>
+                            
+                        
+                                <a href="contacts.html" id="contact-button">
+                                    Связаться с нами
+                                </a>
+                            </nav>
+                            <div class="col-3 d-block d-md-none">
+                                <button class="offcanvas-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                
+                                </button>
+
+                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                    <div class="offcanvas-header row">
+                                  
+                                        <div class="col-2"></div>
+                                        <div class="col-8 hero hero-canvas glitch layers">
+                                            <span>
+                                                TimLabs
+                                            </span>
+                                        </div>
+                                        <div class="col-2">
+                                            <button type="button" class="btn-canvas-close" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
+                                        </div>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        <section class="row  justify-content-center canvas-row">
+                                        
+                                            <div class="col-1 side-arrows side-arrows-left">
+                                                <img src="assets/images/arrow.svg">
+                                            </div>
+                                            <a class="col-6" href="projects.html">
+                                                Проекты
+                                            </a>  
+                                            <div class="col-1 side-arrows side-arrows-right">
+                                                <img src="assets/images/arrow.svg">
+                                            </div>
+                                        
+                                            
+                                        </section>
+                                    
+                                        <div class="row justify-content-center">
+                                            <section class="row  justify-content-center canvas-row">
+                                        
+                                                <div class="col-1 side-arrows side-arrows-left">
+                                                    <img src="assets/images/arrow.svg">
+                                                </div>
+                                                <a class="col-6" href="projects.html">
+                                                    Университет
+                                                </a>  
+                                                <div class="col-1 side-arrows side-arrows-right">
+                                                    <img src="assets/images/arrow.svg">
+                                                </div>
+                                            
+                                                
+                                            </section>
+                                        
+                                        </div>
+                                    
+                                        <div class="row justify-content-center">
+                                            <section class="row  justify-content-center canvas-row">
+                                        
+                                                <div class="col-2 side-arrows side-arrows-left">
+                                                    <img src="assets/images/arrow.svg">
+                                                </div>
+                                                <a class="col-6" href="contacts.html">
+                                                    Связаться с нами
+                                                </a>  
+                                                <div class="col-2 side-arrows side-arrows-right">
+                                                    <img src="assets/images/arrow.svg">
+                                                </div>
+                                            
+                                                
+                                            </section>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <main>
+                    <div class="container-fluid">
+                        <div class="projects-header hero-container">
+                            <div class="hero layers">
+                                <div class="title  animation animation-left">
+                                    <img class="title-image" src="assets/images/arrows_small.svg"></img>
+                                    <span class="title-text">
+                                        Связаться с нами
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb animation animation-left">
+                                        <li class="breadcrumb-item">
+                                            <a href="index.html">Главная</a>
+                                        </li>
+                                        <li class="breadcrumb-item active" aria-current="page">
+                                            Контакты
+                                        </li>
+                                    </ol>
+                                </nav>
+                            </div>
+                    
+                        </div>
+                    </div>
+                    
+                    <article class="typed-contacts container">
+                        <section class="contacts-section">
+                            <dl>
+                                <dt class="contact-title animation animation-left">
+                                    <span id="contact-text"></span>
+                                </dt>
+                                <dd class="contact-element animation animation-top">
+                                    <span id="contact-email" ></span>
+                                </dd>
+                                <dd class="contact-element animation animation-top">
+                                    <span id="contact-phone"></span>
+                                </dd>
+                            </dl>
+                           
+                        </section>
+                        <section class="contacts-section">
+                            <dl>
+                                <dt class="contact-title animation animation-left">
+                                    <span id="adress-text" contacts-title></span>
+                                </dt>
+                                <dd class="contact-element animation animation-top">
+                                    <span id="adress"></span>
+                                </dd>
+                            </dl>
+                        </section>
+                        <section class="contacts-section">
+                            <dl>
+                                <dt class="contact-title animation animation-left">
+                                    <span id="map-text"></span>
+                                </dt>
+                                <dd class="animation animation-top">
+                                    <div style="position:relative;overflow:hidden;width:80%"><a href="https://yandex.ru/maps/org/uchebny_korpus_1_gbou_vpo_rgau_mskha_imeni_k_a_timiryazeva/110463680684/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Учебный корпус № 1, ГБОУ ВПО РГАУ МСХА имени К. А. Тимирязева</a><a href="https://yandex.ru/maps/213/moscow/category/university/184106140/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">ВУЗ в Москве</a><iframe src="https://yandex.ru/map-widget/v1/?ll=37.561613%2C55.831640&mode=poi&poi%5Bpoint%5D=37.557471%2C55.832138&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D110463680684&z=16.51" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+                                </dd>
+                        </section>
+                    </article>
+                    
+               
+                    <div class="container-fluid section-3-sep px-0">
+                        <div class="row align-items-top">
+                            <img src="assets/images/footer_sep.svg" class="col-12 px-0">
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+        <footer>
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row justify-content-center secondary-nav">
+                            
+                        <a href="projects.html">Проекты</a>
+                
+                        <a href="index.html">Оборудование</a>
+                
+                        <a href="contacts.html">Контакты</a>
+                              
+                         
+                        </div>
+                    </div>
+                    <div class="row justify-content-center  align-items-center">
+                        <div class="col-12 footer-logo">
+                            <img src="assets/images/rgau_msha_logo.svg">
+                       
+                            <div class="text">
+                                <h3>ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ВЫСШЕГО ОБРАЗОВАНИЯ</h3>
+                                <h4>РОССИЙСКИЙ ГОСУДАРСТВЕННЫЙ АГРАРНЫЙ УНИВЕРСИТЕТ</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-6">
+                            © ЧВК Кузя Лакомкин
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script src="assets/js/typeDelay.js"></script>
+        <script src="assets/js/animation.js"></script>
+        <script src="assets/js/particles.js"></script>
+        <script src="assets/js/app.js"></script>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+</html>
