@@ -100,10 +100,10 @@
 .glide__slide h2 {
     display: flex;
     align-items: center;
-    margin: 4%  5%  2% 5%;
-    font-size: 18px;
+    margin: 4%  5%  3% 5%;
+    font-size: 22px;
     text-align: left;
-    height: 14%;
+    height: 18%;
     vertical-align: middle;
 }
 

@@ -13,7 +13,7 @@ var contactTitle = new Typed("#contact-text", {
               
     typeSpeed: 50,
     backSpeed: 0,
-    strings: ["Email: timlabs@rgaumsha.ru"],
+    strings: ["timlabs@rgaumsha.ru"],
     startDelay: 2200,
     loop: false,
     onComplete: function(self) { self.cursor.remove(); }
@@ -52,7 +52,7 @@ var adress = new Typed("#adress", {
   var mapText = new Typed("#map-text", {     
     typeSpeed: 50,
     backSpeed: 0,
-    strings: ["Мы на карте"],
+    strings: ["Мы на карте:"],
     startDelay: 1000,
     loop: false,
     onComplete: function(self) {self.cursor.remove() }

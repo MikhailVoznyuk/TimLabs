@@ -19,13 +19,20 @@
                                 </a>
                             </div>
                             <nav class="primary-nav d-none d-md-block col-8">
-                                <a href="projects.html">
+                                <a class="nav-link" href="projects.html">
                                     Проекты
+                                    <div class="link-wrapper">
+                                        <span></span>
+                                    </div>
                                 </a>
                             
                             
-                                <a href="index.html">
+                                <a class="nav-link" href="index.html">
                                     Оборудование 
+                                    <div class="link-wrapper">
+                                        <span></span>
+                                    </div>
+                                    
                                 </a>
                             
                         
@@ -136,43 +143,85 @@
                     </div>
                     
                     <article class="typed-contacts container">
-                        <section class="contacts-section">
-                            <dl>
-                                <dt class="contact-title animation animation-left">
-                                    <span id="contact-text"></span>
-                                </dt>
-                                <dd class="contact-element animation animation-top">
-                                    <span id="contact-email" ></span>
-                                </dd>
-                                <dd class="contact-element animation animation-top">
-                                    <span id="contact-phone"></span>
-                                </dd>
-                            </dl>
-                           
-                        </section>
-                        <section class="contacts-section">
-                            <dl>
-                                <dt class="contact-title animation animation-left">
-                                    <span id="adress-text" contacts-title></span>
-                                </dt>
-                                <dd class="contact-element animation animation-top">
-                                    <span id="adress"></span>
-                                </dd>
-                            </dl>
-                        </section>
-                        <section class="contacts-section">
-                            <dl>
-                                <dt class="contact-title animation animation-left">
-                                    <span id="map-text"></span>
-                                </dt>
-                                <dd class="animation animation-top">
-                                    <div class="map-section">
-                                        <div style="position:relative;overflow:hidden;width:80%"><a href="https://yandex.ru/maps/org/uchebny_korpus_1_gbou_vpo_rgau_mskha_imeni_k_a_timiryazeva/110463680684/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Учебный корпус № 1, ГБОУ ВПО РГАУ МСХА имени К. А. Тимирязева</a><a href="https://yandex.ru/maps/213/moscow/category/university/184106140/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">ВУЗ в Москве</a><iframe src="https://yandex.ru/map-widget/v1/?ll=37.561613%2C55.831640&mode=poi&poi%5Bpoint%5D=37.557471%2C55.832138&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D110463680684&z=16.51" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
-                                    </div>
+                        <section class="row">
+                            <section class="col-8">
+                                <section class="contacts-section">
+                                    <dl>
+                                        <dt class="contact-title animation animation-left">
+                                            <img class="start-icon" src="assets/icons/contacts.svg">
+                                            <span id="contact-text"></span>
+                                        </dt>
+                                        <dd class="contact-element animation animation-top">
+                                            <img class="start-icon-sm" src="assets/icons/email.svg">
+                                            <span id="contact-email" ></span>
+                                        </dd>
+                                        <dd class="contact-element animation animation-top">
+                                            <img class="start-icon-sm" src="assets/icons/phone-call.svg">
+                                            <span id="contact-phone"></span>
+                                        </dd>
+                                    </dl>
+                                   
+                                </section>
+                                <section class="contacts-section">
+                                    <dl>
+                                        <dt class="contact-title animation animation-left">
+                                            <img class="start-icon" src="assets/icons/company.svg">
+                                            <span id="adress-text" contacts-title></span>
+                                        </dt>
+                                        <dd class="contact-element animation animation-top">
+                                            
+                                            <span id="adress"></span>
+                                        </dd>
+                                    </dl>
+                                </section>
+                                <section class="contacts-section">
+                                    <dl>
+                                        <dt class="contact-title contact-map-title animation animation-left">
+                                            <img class="start-icon" src="assets/icons/map-point.svg">
+                                            <span id="map-text"></span>
+                                        </dt>
+                                        <dd class="animation animation-top">
+                                            <div class="map-section">
+                                                <div style="position:relative;overflow:hidden;width:80%"><a href="https://yandex.ru/maps/org/uchebny_korpus_1_gbou_vpo_rgau_mskha_imeni_k_a_timiryazeva/110463680684/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Учебный корпус № 1, ГБОУ ВПО РГАУ МСХА имени К. А. Тимирязева</a><a href="https://yandex.ru/maps/213/moscow/category/university/184106140/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">ВУЗ в Москве</a><iframe src="https://yandex.ru/map-widget/v1/?ll=37.561613%2C55.831640&mode=poi&poi%5Bpoint%5D=37.557471%2C55.832138&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D110463680684&z=16.51" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+                                            </div>
+                                            
+                                        </dd>
+                                    </dl>
+                                </section>
+                            </section>
+                            <section class="col-3">
+                                
+                                <form class="contact-form">
+                                    <h3 class="form-title">Напишите нам</h3>
+                                    <label class="form-section">
+                                        <h4>Ваша почта:</h4>
+                                        <input class="input-field" type="email" placeholder="Укажите адрес" required>
+                                    </label>
+                                    <label class="form-section">
+                                        <h4>Тема вопроса:</h4>
+                                        <input class="input-field" type="text" placeholder="Укажите тему" required>
+                                    </label>
+                                    <label class="form-section">
+                                        <h4>Сообщение:</h4>
+                                        <textarea class="input-field" required>Напишите ваше сообщение... </textarea>
+                                    </label>
+                                    <label class="form-section">
+                                        <button type="sumbmit" class="btn-submit-contact">
+                                            <div class="inner-fluid right"></div>
+                                            <div class="inner-fluid left"></div>
+                                            <span>Отправить</span>
+                                        </button>
+                                    </label>
                                     
-                                </dd>
-                            </dl>
+    
+    
+    
+                                </form>
+                                
+                            </section>
                         </section>
+                       
+                        
                     </article>
                     
                

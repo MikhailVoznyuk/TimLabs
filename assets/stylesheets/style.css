@@ -69,6 +69,22 @@ body {
   font-size: 22px;
 }
 
+.start-icon {
+  width: 40px;
+  height: 40px;
+  padding-bottom: 6px;
+
+}
+
+.start-icon-sm {
+  width: 30px; 
+  height: 30px;
+  padding-bottom: 4px;
+}
+
+.contact-map-title {
+  margin-bottom: 40px;
+}
 /* header  */
 
 
@@ -123,6 +139,31 @@ body {
   background-size: cover;
 }
 
+.link-wrapper  {
+  position: relative;
+  width: 100%;
+  height: 3px;
+}
+
+.link-wrapper span {
+  display: block;
+  position: absolute;
+  width: 0; 
+  height: 3px;
+  left: 50%;
+  border-radius: 5px;
+  background-color: #0FCE7E;
+  transition: all 0.6s ease-in-out
+}
+
+.nav-link:hover .link-wrapper span {
+  width: 100%;
+  left: 0;
+  transition: all 0.6s ease-in-out;
+}
+
+
+
 /* Sections */
 
 .section-1 {
@@ -173,6 +214,37 @@ body {
     margin-top: 50px;
 }
 
+.ul-line {
+  display: flex; 
+  justify-content: start;
+  align-items: start;
+}
+
+.ul-line p {
+  display: inline-block;
+  width: 80%;
+  padding: 0;
+  margin: 0;
+  margin-left: 20px;
+}
+
+.ul-line .prefix {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 24px;
+  width: 24px;
+  background-color: #000;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.ul-line .prefix span {
+  width: 16px; 
+  height: 16px; 
+  background-color:#0FCE7E;
+}
+
 
 .cut-background {
   display: inline-block;
@@ -203,11 +275,15 @@ body {
   background: url('vector-sep.svg');
   background-size: cover;
   background-repeat: no-repeat;
+
 }
 
 
 
-
+.section-2 dt {
+  margin: 30px 0 20px 0;
+  font-size: 28px;
+}
 
 .section-3 {
 
@@ -266,6 +342,13 @@ body {
     padding-left: 4%; 
     padding-right: 4%;
     margin-bottom: 100px;
+    transition: all 0.6s ease-in-out;
+}
+
+.project-block:hover {
+  transform:scale(110%);
+  transition: all 0.6s ease-in-out;
+
 }
 
 .project-block.project-block-small {
@@ -1196,9 +1279,91 @@ footer {
     
   }
 
-  .hero span {
-  }
+.contact-form {
+  border: 4px #0FCE7E solid;
+  padding: 10px 20px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.contact-form .form-title {
+  margin: 18px 0 24px 0;
+}
+
+.input-field {
+  margin-top: 12px;
+  width: 100%;
+  border: 2px #0FCE7E solid;
+  background: none;
+  border-radius: 5px;
+  color:#0FCE7E;
+}
+
+.input-field::placeholder {
+  color:#0FCE7E;
+}
+
+.contact-form .form-section {
+  margin-bottom: 32px;
+}
+
+.contact-form .btn-submit-contact {
+  position: relative;
+  width: 120px;
   
+  height: 40px;
+  background: none;
+  box-shadow: none;
+  border: #0FCE7E 2px solid;
+  border-radius: 10px;
+}
+
+.contact-form .btn-submit-contact span {
+  position: relative;
+  
+  color: #fff;
+  z-index: 4;
+}
+
+.contact-form .btn-submit-contact  {
+  
+}
+
+.contact-form .btn-submit-contact .inner-fluid {
+  position: absolute;
+  width: 0;
+  height: 36px;
+  background-color: #0FCE7E;
+  top: 0;
+  transition: all 0.6s ease-in-out; 
+  z-index: 3;
+  left: 58px;
+}
+
+.contact-form .btn-submit-contact .inner-fluid.left {
+  border-radius: 5px 0 0 5px;
+}
+
+.contact-form .btn-submit-contact:hover .inner-fluid.right{
+  border-radius: 0 5px 5px 0;
+}
+
+.contact-form .btn-submit-contact:hover .inner-fluid {
+  width: 58px;
+}
+
+.contact-form .btn-submit-contact:hover .inner-fluid.left {
+  left: 0;
+  transition: all 0.6s ease-in-out;
+}
+
+.contact-form .btn-submit-contact:hover .inner-fluid.right{
+  left: 58px;
+  border-radius: 0 5px 5px 0;
+  transition: all 0.6s ease-in-out;
+}
+
+
   .environment {
     position: absolute;
     top: 0;
