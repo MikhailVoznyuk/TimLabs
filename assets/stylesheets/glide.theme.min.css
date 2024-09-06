@@ -98,17 +98,22 @@
 }
 
 .glide__slide h2 {
-    margin: 5%  0  0 5%;
+    display: flex;
+    align-items: center;
+    margin: 4%  5%  2% 5%;
     font-size: 18px;
     text-align: left;
+    height: 14%;
+    vertical-align: middle;
 }
 
-.glide__slide img {
-    display: inline-block;
-    width: 100%;
-    padding: 10px 5%;
+.section-3 .glide__slide img {
+    width: 92%;
+    aspect-ratio: 300/150;
+    object-fit: cover;
     border-radius: 10%;
 }
+
 
 
 .project-glide .glide__slide {
@@ -137,9 +142,10 @@
     text-align: left;
     width: 100%;
     padding-left: 5%;
+    margin-top: 20px;
 }
 
-.glide__slide a {
+.section-3 .glide__slide a {
     display: inline-block;
     color: #0FCE7E;
     text-decoration: none;
@@ -149,7 +155,7 @@
     border: 3px solid #0FCE7E;
     border-radius: 10px;
     width: 60%;
-    margin: 10px 0 30px 20%;
+    margin: auto 0 30px 0;
     text-align: center;
 }
 

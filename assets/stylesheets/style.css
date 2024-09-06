@@ -37,6 +37,7 @@ body {
 }
 
 
+
 .project h2 {
   color:#0FCE7E;
   font-size: 28px;
@@ -137,7 +138,9 @@ body {
     margin-top: -150px;
 }
 .section-1-sep img {
-    width: 100%;
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 1200/120;
     
 }
 
@@ -158,7 +161,12 @@ body {
 }
 
 .section-2 {
-    margin-top: -1px; 
+  font-family: 'Source Code Pro', serif;
+  margin-top: -1px; 
+  font-size: 22px;
+  font-weight: 400;
+  text-align:justify;
+
 }
 
 .section-2 p {
@@ -177,6 +185,8 @@ body {
 .section-2 .img-cut {
     display: flex;
     width: 100%;
+    aspect-ratio: 200/110;
+    object-fit: cover;
   
    
     clip-path: polygon(10% 0, 95% 0, 100% 10%, 100% 80%, 90% 100%, 5% 100%, 0% 90%, 0% 20%);
@@ -200,25 +210,52 @@ body {
 
 
 .section-3 {
+
     padding: 50px 0;
     color: #fff;
+    font-family: 'Source Code Pro', serif;
+    
    
 }
 
 .article {
-    padding: 100px 0;
+    padding: 30px 0;
 }
+
 
 .section-3 .article {
     padding: 0 0 50px 0;
+    text-align: center;
 }
 
+.section-3 .article h2 {
+  margin-bottom: 40px;
+}
+
+.section-3 .article p {
+  
+}
+
+.section-3 .glide__slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .section-3-sep {
     overflow: hidden;
 }
 
+.section-3-sep img {
+  width: 100%;
+  aspect-ratio: 1200/30;
+  object-fit: cover;
+}
+
 .project-block {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
     width: 100%;
     max-width: 800px;
     aspect-ratio: 600 / 340;
@@ -239,29 +276,34 @@ body {
 }
 
 .block-header {
-    height: 15%;
+
+    margin: 4% 0;
+}
+
+.block-header .col {
+  padding-left: 0;
 }
 
 .block-header h2 {
-
+    font-size: 24px;
     vertical-align: bottom;
-    margin-bottom: 0;
+    margin: 0;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 .project-block.project-block-small .block-header h2 {
     padding-left: 5%;
 }
 .block-body {
-    height: 65%;
+    height: 60%;
     
     padding-bottom: 4%;
   
 }
 
-.block-footer {
-    height: 20%;
-    
-}
+
+
 
 .block-body .preview-image {
   text-align: center;
@@ -276,6 +318,8 @@ body {
 .project-block img {
   background-color: #000;
   width: 100%;
+  aspect-ratio: 350/200;
+  object-fit: cover;
   display: inline-block;
   clip-path: polygon(5% 0, 85% 0, 100% 20%, 100% 40%, 98% 44%, 98% 66%, 100% 70%, 100% 90%, 95% 100%, 15% 100%, 0% 80%, 0% 10%);
 }
@@ -322,6 +366,14 @@ body {
   margin-bottom: 50px;
 }
 
+.map-section {
+  border-radius: 14px;
+  overflow: hidden;
+}
+.map-section iframe {
+  border-radius: 14px;
+}
+
 /* Containers */
 .background-1 {
     background: linear-gradient(180deg, rgba(0, 0, 0, 1), rgba(0, 0, 0 ,0)), linear-gradient(0, rgba(0, 0, 0, 1), rgba(0, 0, 0 ,0)),  url("background.png");
@@ -349,7 +401,43 @@ body {
 }
 
 .project {
+
   background-color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 50px;
+}
+
+.project .date {
+  margin-top: 30px;
+  color: #fff;
+}
+
+.introduction-block {
+  position: relative;
+  display: block;
+  height: 400px;
+  
+}
+
+.introduction-block .text-section {
+  position: relative;
+ 
+  width: 60%;
+  height: 100%;
+  z-index: 3;
+}
+.introduction-block img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 60%;
+  object-fit: cover;
+  z-index: 2;
+  clip-path: polygon(5% 0,  100% 0,  100% 100%, 0 100%);
+}
+
+.section-3  .glide__slide {
+  position: relative;
+  height: 560px;
 }
 
 /* Backgrounds */
@@ -486,6 +574,9 @@ footer {
     clip-path: polygon(20% 0, 80% 0, 99% 100%, 1% 100%);
 }
 
+.block-footer {
+  margin-top: auto;
+}
 .block-footer .outer-polygon:hover {
     background-color: #000;
 }
@@ -1155,4 +1246,29 @@ footer {
 
 .hidden {
   opacity: 0;
+}
+
+@media (max-width: 992px) {
+  .block-body {
+    height: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .block-body {
+    height: 64%;
+}
+  .project-block.project-block-small .block-body .preview-text {
+    height: 40%;
+    margin-top: 20px;
+  }
+  .block-header {
+    margin: 8% 0 4% 0;
+  }
+}
+
+@media (max-width: 447px) {
+  .project-block.project-block-small .block-body .preview-text {
+    height: 34%;
+  }
 }
